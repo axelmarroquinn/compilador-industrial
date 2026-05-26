@@ -1,0 +1,5 @@
+maquina Motor {
+    proceso falla {
+        rpm = leer("sensor_rpm");
+    }
+}

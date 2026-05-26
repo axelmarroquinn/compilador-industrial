@@ -1,0 +1,16 @@
+// Pseudocódigo — IndustrialScript Compiler
+
+MAQUINA Horno:
+  VAR temperatura: num
+  VAR activo: bool
+  PROCESO arranque:
+    INICIAR Horno
+    temperatura = leer("sensor_temp")
+    SI temperatura > 200 ENTONCES
+      ALARMA("TEMPERATURA CRITICA")
+      DETENER Horno
+    SINO
+      ESCRIBIR("Sistema OK")
+    FIN
+
+

@@ -1,0 +1,18 @@
+// Código de 3 direcciones — IndustrialScript Compiler
+
+# === MAQUINA Horno ===
+# PROCESO arranque
+  CALL iniciar, Horno
+  temperatura = LEER("sensor_temp")
+  IF temperatura > 200 GOTO L0
+  GOTO L1
+LABEL L0
+  CALL alarma, "TEMPERATURA CRITICA"
+  CALL detener, Horno
+  GOTO L2
+LABEL L1
+  CALL escribir, "Sistema OK"
+LABEL L2
+# FIN PROCESO arranque
+
+

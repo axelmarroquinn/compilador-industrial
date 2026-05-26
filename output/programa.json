@@ -1,0 +1,23 @@
+{
+  "programa": {
+    "maquinas": [
+      {
+        "nombre": "Horno",
+        "variables": [
+          {"nombre": "temperatura", "tipo": "num"},
+          {"nombre": "activo", "tipo": "bool"}
+        ],
+        "procesos": [
+          {
+            "nombre": "arranque",
+            "sentencias": [
+              {"tipo": "controlMaquina", "comando": "iniciar", "maquina": "Horno"},
+              {"tipo": "asignacion", "variable": "temperatura", "valor": "leer(\"sensor_temp\")"},
+              {"tipo": "si", "condicion": "temperatura > 200", "entonces": [{"tipo": "alarma", "mensaje": "TEMPERATURA CRITICA"}, {"tipo": "controlMaquina", "comando": "detener", "maquina": "Horno"}], "sino": [{"tipo": "escribir", "valor": "Sistema OK"}]}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

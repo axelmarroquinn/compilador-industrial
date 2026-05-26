@@ -1,0 +1,15 @@
+maquina Horno {
+    var num temperatura;
+    var bool activo;
+
+    proceso arranque {
+        iniciar Horno;
+        temperatura = leer("sensor_temp");
+        si temperatura > 200 entonces
+            alarma("TEMPERATURA CRITICA");
+            detener Horno;
+        sino
+            escribir("Sistema OK");
+        fin
+    }
+}

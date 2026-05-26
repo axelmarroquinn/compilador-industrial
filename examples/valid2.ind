@@ -1,0 +1,17 @@
+maquina Prensa {
+    var num ciclos;
+    var num presion;
+
+    proceso produccion {
+        ciclos = 0;
+        mientras ciclos < 10 hacer
+            presion = leer("sensor_presion");
+            si presion > 150 entonces
+                alarma("SOBREPRESION");
+                detener Prensa;
+            fin
+            ciclos = ciclos + 1;
+            esperar 500 ms;
+        fin
+    }
+}

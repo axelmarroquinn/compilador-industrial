@@ -1,0 +1,6 @@
+maquina Bomba {
+    proceso arranque {
+        si presion > 100 entonces
+            iniciar Bomba;
+    }
+}

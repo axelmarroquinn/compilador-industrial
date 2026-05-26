@@ -1,0 +1,12 @@
+maquina Banda {
+    var num velocidad;
+
+    proceso calibrar {
+        velocidad = 50;
+        repetir 3 veces
+            escribir("Ajustando...");
+            esperar 200 ms;
+        fin
+        iniciar Banda;
+    }
+}
