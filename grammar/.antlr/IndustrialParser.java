@@ -129,14 +129,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_programa; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterPrograma(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitPrograma(this);
-		}
 	}
 
 	public final ProgramaContext programa() throws RecognitionException {
@@ -188,14 +180,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaracionMaquina; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterDeclaracionMaquina(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitDeclaracionMaquina(this);
-		}
 	}
 
 	public final DeclaracionMaquinaContext declaracionMaquina() throws RecognitionException {
@@ -245,14 +229,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_cuerpoMaquina; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterCuerpoMaquina(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitCuerpoMaquina(this);
-		}
 	}
 
 	public final CuerpoMaquinaContext cuerpoMaquina() throws RecognitionException {
@@ -315,14 +291,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaracionVar; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterDeclaracionVar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitDeclaracionVar(this);
-		}
 	}
 
 	public final DeclaracionVarContext declaracionVar() throws RecognitionException {
@@ -361,14 +329,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_tipo; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterTipo(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitTipo(this);
-		}
 	}
 
 	public final TipoContext tipo() throws RecognitionException {
@@ -414,14 +374,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaracionProceso; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterDeclaracionProceso(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitDeclaracionProceso(this);
-		}
 	}
 
 	public final DeclaracionProcesoContext declaracionProceso() throws RecognitionException {
@@ -465,14 +417,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentencias; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterSentencias(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitSentencias(this);
-		}
 	}
 
 	public final SentenciasContext sentencias() throws RecognitionException {
@@ -539,14 +483,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentencia; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterSentencia(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitSentencia(this);
-		}
 	}
 
 	public final SentenciaContext sentencia() throws RecognitionException {
@@ -646,14 +582,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_asignacion; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterAsignacion(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitAsignacion(this);
-		}
 	}
 
 	public final AsignacionContext asignacion() throws RecognitionException {
@@ -720,14 +648,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_controlMaquina; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterControlMaquina(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitControlMaquina(this);
-		}
 	}
 
 	public final ControlMaquinaContext controlMaquina() throws RecognitionException {
@@ -783,14 +703,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentenciaSi; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterSentenciaSi(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitSentenciaSi(this);
-		}
 	}
 
 	public final SentenciaSiContext sentenciaSi() throws RecognitionException {
@@ -850,14 +762,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentenciaMientras; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterSentenciaMientras(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitSentenciaMientras(this);
-		}
 	}
 
 	public final SentenciaMientrasContext sentenciaMientras() throws RecognitionException {
@@ -904,14 +808,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentenciaRepetir; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterSentenciaRepetir(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitSentenciaRepetir(this);
-		}
 	}
 
 	public final SentenciaRepetirContext sentenciaRepetir() throws RecognitionException {
@@ -957,14 +853,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_llamadaEscribir; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterLlamadaEscribir(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitLlamadaEscribir(this);
-		}
 	}
 
 	public final LlamadaEscribirContext llamadaEscribir() throws RecognitionException {
@@ -1025,14 +913,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_llamadaAlarma; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterLlamadaAlarma(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitLlamadaAlarma(this);
-		}
 	}
 
 	public final LlamadaAlarmaContext llamadaAlarma() throws RecognitionException {
@@ -1076,14 +956,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentenciaEsperar; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterSentenciaEsperar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitSentenciaEsperar(this);
-		}
 	}
 
 	public final SentenciaEsperarContext sentenciaEsperar() throws RecognitionException {
@@ -1133,14 +1005,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expresion; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterExpresion(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitExpresion(this);
-		}
 	}
 
 	public final ExpresionContext expresion() throws RecognitionException {
@@ -1257,14 +1121,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_condicion; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterCondicion(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitCondicion(this);
-		}
 	}
 
 	public final CondicionContext condicion() throws RecognitionException {
@@ -1367,14 +1223,6 @@ public class IndustrialParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_operadorComp; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).enterOperadorComp(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IndustrialListener ) ((IndustrialListener)listener).exitOperadorComp(this);
-		}
 	}
 
 	public final OperadorCompContext operadorComp() throws RecognitionException {
